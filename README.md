@@ -3,6 +3,31 @@ D:\projects\DVC project2\dvc+mlflow+ci>cookiecutter -c v1 https://github.com/dri
 D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>python -m venv myenv
 D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>myenv\Scripts\activate
 (myenv) D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>git init
+(myenv) D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>git remote add origin https://github.com/PiyushVIT346/CI_MLOPS.git
+(myenv) D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>git push origin master
+
+open dagshub website
+click on create button on right top, select new repository option . Now chosse connect a repository option. add your repository of CI_MLOPS. click on remote option and choose experiment option and click on open mlflow ui option. A new tab on google will open of mlflows
+pip install mlflow
+pip install dagshub
+pip install seaborn
+
+create a file dagshub_test.py in notebooks folder. write a test code and run using command :"python .\notebooks\dagshub_test.py"
+Now check in mlflow website
+
+in terminal write the command: "dvc init"
+
+To create its version enter command in terminal:
+(myenv) D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>dvc remote add -d myremote C:\Users\HP\AppData\Local\Temp
+
+enter the code of file data_collection.py,prep.py,model_building.py,model_eval.py and params.yaml,dvc.yaml and model_reg.py
+To run command dvc repro
+now we can chevk mlflow for the best model and parameters. also check the versions.
+
+
+(myenv) D:\projects\DVC project2\dvc+mlflow+ci\CI_MLOS>p
+ip freeze > requirements.txt
+
 
 CI_MLOPS
 ==============================
